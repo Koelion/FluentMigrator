@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[TestTable](
+[Id] int IDENTITY(1,1) NOT NULL,
+[Name] nvarchar(256) NULL,
+[City] nvarchar(128) NULL,
+[PostCode] nvarchar(16) NULL,
+[Phone] [nvarchar](max) NULL,
+[Payment] money NULL,
+CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED(
+	[Id] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = Off,
+ ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON[PRIMARY]
+GO 
